@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Wordle - Justin</title>
+  </head>
+  <body>
+    <div class="alert-container no" data-alert-container></div>
+    <div class="info no" >
+      <img src="/Images/X.svg" id="x" alt="" onclick="hideInfo()" />
+      <div id="how">
+        <h3>How To <span class="g-span">Play</span></h3>
+        <p>• Must be a valid 5 letter word.</p>
+        <p>• 6 tries to guess the right word.</p>
+        <p>• Enjoy</p>
+      </div>
+      <div class="line"></div>
+      <div id="example">
+        <h3>Example</h3>
+        <div class="item">
+          <div class="color" style="background: #1ed066">A</div>
+          <p>Green is correct</p>
+        </div>
+        <div class="item">
+          <div class="color" style="background: #ffd075">B</div>
+          <p>Yellow is correct but not in the right spot</p>
+        </div>
+        <div class="item">
+          <div class="color" style="background: #c7c7c7">C</div>
+          <p>Gray is wrong</p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="end">
+        <p>
+          Everything made by
+          <a class="g-span" target="_blank" href="http://kjustin.com/"
+            >Justin</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- </div> -->
+    <div id="header" class="container no">
+      <h1 id="title"><span class="g-span">WORD</span>LE</h1>
+      <div class="icons">
+        <div id="restart" class="nav-icon" onclick="location.reload()">
+          <img src="/Images/Restart.svg" alt="" />
+        </div>
+        <div id="info" class="nav-icon" onclick="showInfo()">
+          <img src="/Images/info.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div data-guess-grid class="guess-grid no container">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+    <div data-keyboard class="keyboard container no">
+      <button class="key" data-key="Q">Q</button>
+      <button class="key" data-key="W">W</button>
+      <button class="key" data-key="E">E</button>
+      <button class="key" data-key="R">R</button>
+      <button class="key" data-key="T">T</button>
+      <button class="key" data-key="Y">Y</button>
+      <button class="key" data-key="U">U</button>
+      <button class="key" data-key="I">I</button>
+      <button class="key" data-key="O">O</button>
+      <button class="key" data-key="P">P</button>
+      <div class="space"></div>
+      <button class="key" data-key="A">A</button>
+      <button class="key" data-key="S">S</button>
+      <button class="key" data-key="D">D</button>
+      <button class="key" data-key="F">F</button>
+      <button class="key" data-key="G">G</button>
+      <button class="key" data-key="H">H</button>
+      <button class="key" data-key="J">J</button>
+      <button class="key" data-key="K">K</button>
+      <button class="key" data-key="L">L</button>
+      <div class="space"></div>
+      <button data-enter class="key large">
+        <img src="/Images/Enter.svg" alt="" />
+      </button>
+      <button class="key" data-key="Z">Z</button>
+      <button class="key" data-key="X">X</button>
+      <button class="key" data-key="C">C</button>
+      <button class="key" data-key="V">V</button>
+      <button class="key" data-key="B">B</button>
+      <button class="key" data-key="N">N</button>
+      <button class="key" data-key="M">M</button>
+      <button data-delete class="key large">
+        <img src="/Images/Delete.svg" alt="" />
+      </button>
+    </div>
+    <div id="warn">This is not mobile friendly yet. Go on a larger device!</div>
+  </body>
+</html>
