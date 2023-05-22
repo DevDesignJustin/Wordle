@@ -87,7 +87,7 @@ img {
 .keyboard {
   display: grid;
   grid-template-columns: repeat(20, minmax(auto, 1.25em));
-  grid-auto-rows: 3em;
+  grid-auto-rows: 60px;
   gap: 10px;
   justify-content: center;
   width: 630px;
@@ -343,8 +343,36 @@ img {
   margin: auto;
 }
 
+@media (max-height: 800px) {
+  #header {
+    width: 380px;
+  }
+  .guess-grid {
+    gap: 15px;
+    width: 360px;
+    height: 390px;
+  }
+
+  .tile {
+    font-size: 26px;
+    height: 55px;
+    width: 55px;
+  }
+  .keyboard {
+    gap: 6px;
+    justify-content: center;
+    width: 600px;
+  }
+
+  .key {
+    font-size: 24px;
+    width: 45px;
+    height: 55px;
+  }
+}
+
 @media (max-width: 850px) {
-  .no {
+  /* .no {
     display: none;
   }
 
@@ -354,5 +382,5 @@ img {
 
   #warn {
     display: flex;
-  }
+  } */
 }
