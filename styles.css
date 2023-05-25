@@ -371,16 +371,56 @@ img {
   }
 }
 
-@media (max-width: 850px) {
-  /* .no {
-    display: none;
-  }
-
+@media (max-height: 700px) {
   #header {
-    display: none;
+    width: 380px;
+  }
+  .guess-grid {
+    gap: 15px;
+    width: 360px;
+    height: 360px;
   }
 
-  #warn {
-    display: flex;
-  } */
+  .tile {
+    font-size: 26px;
+    height: 53px;
+    width: 53px;
+  }
+  .keyboard {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .key {
+    font-size: 24px;
+    width: 40px;
+    height: 50px;
+  }
+}
+
+@media (max-height: 680px) {
+  #header {
+    width: 360px;
+  }
+  .guess-grid {
+    gap: 15px;
+    height: 360px;
+  }
+
+  .tile {
+    font-size: 26px;
+    height: 49px;
+    width: 49px;
+  }
+  .keyboard {
+    gap: 3px;
+    justify-content: center;
+    height: 180px;
+  }
+
+  .key {
+    font-size: 22px;
+    width: 40px;
+    height: 50px;
+  }
 }
